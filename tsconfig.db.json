@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "compiled",
+    "sourceMap": false
+  },
+  "include": ["_config/*", "src/db/migrations/*"]
+  // "exclude": ["**/*.test.ts", "**/__tests__", "_config/**"],
+  // "files": ["src/@types/*.ts"]
+}

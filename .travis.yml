@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - lts/*
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database "user-service_test";' -U postgres
+
+env:
+  global:
+    - DATABASE_URL_TEST=postgres://travis@localhost:5433/user-service_test
+
+script:
+  - "NODE_ENV=test yarn test"
