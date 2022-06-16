@@ -1,4 +1,4 @@
-import autoLoader from "./autoLoader";
+import { autoLoader } from "@KitoC/express-utils";
 
 const utils = autoLoader(__dirname);
 

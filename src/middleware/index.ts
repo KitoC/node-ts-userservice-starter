@@ -1,3 +1,3 @@
-import utils from "../utils";
+import { autoLoader } from "@KitoC/express-utils";
 
-export default utils.autoLoader(__dirname);
+export default autoLoader(__dirname);
