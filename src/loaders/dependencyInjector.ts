@@ -1,5 +1,6 @@
 import * as awilix from "awilix";
 import * as express from "express";
+
 import { LoaderArgs } from "../@types/loader.types";
 
 export default ({ app, registerModules = () => {} }: LoaderArgs) => {
@@ -29,7 +30,6 @@ export default ({ app, registerModules = () => {} }: LoaderArgs) => {
 
   app.use((req, res, next) => {
     res.locals.container = container;
-    req._container = container;
 
     next();
   });

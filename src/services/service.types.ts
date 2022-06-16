@@ -7,7 +7,6 @@ export interface UserService {
 
 export interface Container {
   db: Db;
-  UserService: UserService;
   currentUser: UserInstance;
   userSettings: any;
 }
